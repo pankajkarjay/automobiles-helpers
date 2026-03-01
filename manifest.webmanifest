@@ -1,0 +1,10 @@
+{
+  "name": "Secure Vehicle Companion",
+  "short_name": "VehicleCompanion",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b132b",
+  "theme_color": "#0b132b",
+  "description": "Authorized Bluetooth vehicle lock/unlock/start/stop demo app.",
+  "icons": []
+}

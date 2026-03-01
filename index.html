@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b132b" />
+    <title>Secure Vehicle Companion</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Secure Vehicle Companion</h1>
+        <p class="subtitle">Authorized Bluetooth vehicle control demo</p>
+      </header>
+
+      <section class="card status-card">
+        <h2>Connection</h2>
+        <p id="connectionStatus" class="status">Disconnected</p>
+        <div class="button-row">
+          <button id="connectBtn">Connect Vehicle</button>
+          <button id="disconnectBtn" disabled>Disconnect</button>
+        </div>
+      </section>
+
+      <section class="card controls-card">
+        <h2>Actions</h2>
+        <div class="grid">
+          <button class="action lock" data-command="LOCK" disabled>Lock</button>
+          <button class="action unlock" data-command="UNLOCK" disabled>Unlock</button>
+          <button class="action start" data-command="START" disabled>Start</button>
+          <button class="action stop" data-command="STOP" disabled>Stop</button>
+        </div>
+      </section>
+
+      <section class="card log-card">
+        <h2>Log</h2>
+        <ul id="log"></ul>
+      </section>
+
+      <section class="card notice-card">
+        <h2>Legal Notice</h2>
+        <p>
+          Use only with vehicles you own or have explicit permission to control. This demo does
+          not support unauthorized access or signal override behavior.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

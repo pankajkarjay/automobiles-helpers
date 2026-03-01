@@ -1,0 +1,104 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b132b;
+  --card: #1c2541;
+  --card-border: #3a506b;
+  --text: #f0f4f8;
+  --muted: #b8c6d1;
+  --primary: #5bc0be;
+  --danger: #ff6b6b;
+  --success: #80ed99;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0b132b, #101a36);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+.card {
+  background: color-mix(in oklab, var(--card), black 8%);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.status {
+  margin: 0.5rem 0 0.8rem;
+  color: var(--muted);
+}
+
+.button-row,
+.grid {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.grid .action {
+  flex: 1 1 calc(50% - 0.6rem);
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  color: #06101a;
+  background: var(--primary);
+}
+
+button:disabled {
+  opacity: 0.45;
+}
+
+button.lock {
+  background: #8fd3ff;
+}
+
+button.unlock {
+  background: #f9cb80;
+}
+
+button.start {
+  background: var(--success);
+}
+
+button.stop {
+  background: var(--danger);
+}
+
+#log {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+#log li {
+  margin-bottom: 0.4rem;
+}
