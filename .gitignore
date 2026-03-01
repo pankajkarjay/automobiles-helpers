@@ -1,0 +1,8 @@
+# Android / Gradle
+**/build/
+.gradle/
+local.properties
+*.iml
+
+# OS/editor
+.DS_Store
